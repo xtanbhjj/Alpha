@@ -1,3 +1,0 @@
-#Alpha
-#bet
-dnajiuwhdiaa
