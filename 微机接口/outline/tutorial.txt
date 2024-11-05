@@ -1,0 +1,14 @@
+1s 延迟
+    ;将8254 cs接IOY1，地址是0640H,clk0 18.432khz, out0 每隔1s就会输出
+	MOV DX,0646H
+	MOV AL,36H
+	OUT DX,AL
+	MOV DX,0640H
+	MOV AL,00H
+	OUT DX,AL
+	MOV AL,48H
+	OUT DX,AL;选定计数器0持续产生方波，频率为1000Hz
+
+
+1. 连线的时候记得8255是要连满的
+2. 关于键盘的题，连线可以全部参考实验8

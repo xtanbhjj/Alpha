@@ -1,0 +1,63 @@
+code segment
+	assume cs:code
+start:
+    push ds
+	mov ax,0000H
+	mov ds,ax
+	mov ax,offset MIR7
+	mov si,003cH
+	mov [si],ax
+	mov ax,cs
+	mov si,003EH
+	mov [si],ax
+	mov ax,offset MIR6
+	mov si,0038H
+	mov [si],ax
+	mov ax,cs
+	mov si,003AH
+	mov [si],ax
+	pop ds
+	
+	mov al,11H
+	out 20H,al
+	mov al,08H
+	out 21H,al
+	mov al,04H
+	out 21H,AL
+	mov al,01H
+	out 21H,al
+	mov al,2FH
+	out 21H,al
+AA1:
+    NOP
+    JMP AA1
+MIR7:
+	call delay
+	mov ax,0137H
+	int 10H
+	mov ax,0120H
+	int 10H
+	mov al,20H
+	out 20H,al
+	IRET
+MIR6:
+	call delay
+	mov ax,0136H
+	int 10H
+	mov ax,0120H
+	int 10H
+	mov al,20H
+	out 20H,al
+	IRET
+
+delay:
+	push cx
+	mov cx,0f00H
+AA0:
+	push ax
+	pop ax
+	loop AA0
+	pop cx
+	RET
+code ends
+	 end start

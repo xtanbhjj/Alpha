@@ -1,0 +1,84 @@
+
+public value
+
+data segment 
+	value db ?
+data ends
+
+code segment
+	assume cs:code,ds:data
+	
+start:
+
+	MOV AX,OFFSET MIR6
+	MOV SI,0038H
+	MOV [SI],AX
+	MOV AX,CS
+	MOV SI,003AH
+	MOV [SI],AX
+	POP DS
+	
+	CLI
+	
+	MOV AL,11H
+	OUT 20H,AL
+	MOV AL,08H
+	OUT 21H,AL
+	MOV AL,04H
+	OUT 21H,AL
+	MOV AL,03H
+	OUT 21H,AL
+	MOV AL,2FH
+	OUT 21H,AL
+	
+	STI
+
+a8255:
+	mov dx,0646h
+	mov al,90h
+	out dx,al
+	
+	
+ad:	
+	cli
+	mov ax,data
+	mov ds,ax
+	mov dx,0600h
+	out dx,al
+	
+	call delay
+	sti
+	jmp ad
+
+MIR6:
+
+		
+	mov dx,0640h
+	in al,dx
+	or al,01111111b
+	cmp al,11111111b
+	jnz ad
+	
+	call delay
+	
+	mov ax,data
+	mov ds,ax
+	mov dx,0600h
+	in al,dx
+	mov value,al
+	
+	mov dx,0642h
+	out dx,al
+	IRET
+	
+delay:
+	push cx
+	push ax
+	mov cx,0ffffh
+L1:	loop L1
+	pop ax
+	pop cx
+	ret
+	
+code ends
+	end start
