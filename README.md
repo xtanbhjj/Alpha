@@ -1,5 +1,4 @@
-# Welcome to Alpha's github
+# Alpha Project
 
-## here will be many projects during my school life
-1. Todolist in ios
-2. jlu微机接口实验
+## Introduction
+Alpha is a project aimed at share my works in jlu
