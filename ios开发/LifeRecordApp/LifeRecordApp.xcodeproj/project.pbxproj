@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4044D72CDA516E0035BF6C /* LifeRecordAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4044D62CDA516E0035BF6C /* LifeRecordAppApp.swift */; };
+		FF4044D92CDA516E0035BF6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4044D82CDA516E0035BF6C /* ContentView.swift */; };
+		FF4044DB2CDA516F0035BF6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4044DA2CDA516F0035BF6C /* Assets.xcassets */; };
+		FF4044E82CDA516F0035BF6C /* LifeRecordAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4044E72CDA516F0035BF6C /* LifeRecordAppTests.swift */; };
+		FF4044F22CDA516F0035BF6C /* LifeRecordAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4044F12CDA516F0035BF6C /* LifeRecordAppUITests.swift */; };
+		FF4044F42CDA516F0035BF6C /* LifeRecordAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4044F32CDA516F0035BF6C /* LifeRecordAppUITestsLaunchTests.swift */; };
+		FF4045012CDA51CE0035BF6C /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4045002CDA51CE0035BF6C /* Record.swift */; };
+		FF4045032CDA51F50035BF6C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4045022CDA51F50035BF6C /* DataManager.swift */; };
+		FF4045052CDA522E0035BF6C /* AddRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4045042CDA522E0035BF6C /* AddRecordView.swift */; };
+		FF4045072CDA524E0035BF6C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4045062CDA524E0035BF6C /* ImagePicker.swift */; };
+		FF4045092CDA547A0035BF6C /* RecordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4045082CDA547A0035BF6C /* RecordDetailView.swift */; };
+		FF40450B2CDA55E60035BF6C /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40450A2CDA55E60035BF6C /* StatsView.swift */; };
+		FF40450D2CDA560C0035BF6C /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF40450C2CDA560C0035BF6C /* Quotes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4044E42CDA516F0035BF6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4044CB2CDA516E0035BF6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4044D22CDA516E0035BF6C;
+			remoteInfo = LifeRecordApp;
+		};
+		FF4044EE2CDA516F0035BF6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4044CB2CDA516E0035BF6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4044D22CDA516E0035BF6C;
+			remoteInfo = LifeRecordApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4044D32CDA516E0035BF6C /* LifeRecordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeRecordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4044D62CDA516E0035BF6C /* LifeRecordAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeRecordAppApp.swift; sourceTree = "<group>"; };
+		FF4044D82CDA516E0035BF6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF4044DA2CDA516F0035BF6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF4044E32CDA516F0035BF6C /* LifeRecordAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeRecordAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4044E72CDA516F0035BF6C /* LifeRecordAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeRecordAppTests.swift; sourceTree = "<group>"; };
+		FF4044ED2CDA516F0035BF6C /* LifeRecordAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeRecordAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4044F12CDA516F0035BF6C /* LifeRecordAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeRecordAppUITests.swift; sourceTree = "<group>"; };
+		FF4044F32CDA516F0035BF6C /* LifeRecordAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeRecordAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF4045002CDA51CE0035BF6C /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		FF4045022CDA51F50035BF6C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FF4045042CDA522E0035BF6C /* AddRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordView.swift; sourceTree = "<group>"; };
+		FF4045062CDA524E0035BF6C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FF4045082CDA547A0035BF6C /* RecordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailView.swift; sourceTree = "<group>"; };
+		FF40450A2CDA55E60035BF6C /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		FF40450C2CDA560C0035BF6C /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4044D02CDA516E0035BF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4044E02CDA516F0035BF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4044EA2CDA516F0035BF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF4044CA2CDA516E0035BF6C = {
+			isa = PBXGroup;
+			children = (
+				FF4044D52CDA516E0035BF6C /* LifeRecordApp */,
+				FF4044E62CDA516F0035BF6C /* LifeRecordAppTests */,
+				FF4044F02CDA516F0035BF6C /* LifeRecordAppUITests */,
+				FF4044D42CDA516E0035BF6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4044D42CDA516E0035BF6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4044D32CDA516E0035BF6C /* LifeRecordApp.app */,
+				FF4044E32CDA516F0035BF6C /* LifeRecordAppTests.xctest */,
+				FF4044ED2CDA516F0035BF6C /* LifeRecordAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4044D52CDA516E0035BF6C /* LifeRecordApp */ = {
+			isa = PBXGroup;
+			children = (
+				FF4045082CDA547A0035BF6C /* RecordDetailView.swift */,
+				FF4045062CDA524E0035BF6C /* ImagePicker.swift */,
+				FF4045042CDA522E0035BF6C /* AddRecordView.swift */,
+				FF4045022CDA51F50035BF6C /* DataManager.swift */,
+				FF4045002CDA51CE0035BF6C /* Record.swift */,
+				FF4044D62CDA516E0035BF6C /* LifeRecordAppApp.swift */,
+				FF4044D82CDA516E0035BF6C /* ContentView.swift */,
+				FF4044DA2CDA516F0035BF6C /* Assets.xcassets */,
+				FF40450A2CDA55E60035BF6C /* StatsView.swift */,
+				FF40450C2CDA560C0035BF6C /* Quotes.swift */,
+			);
+			path = LifeRecordApp;
+			sourceTree = "<group>";
+		};
+		FF4044E62CDA516F0035BF6C /* LifeRecordAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4044E72CDA516F0035BF6C /* LifeRecordAppTests.swift */,
+			);
+			path = LifeRecordAppTests;
+			sourceTree = "<group>";
+		};
+		FF4044F02CDA516F0035BF6C /* LifeRecordAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4044F12CDA516F0035BF6C /* LifeRecordAppUITests.swift */,
+				FF4044F32CDA516F0035BF6C /* LifeRecordAppUITestsLaunchTests.swift */,
+			);
+			path = LifeRecordAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4044D22CDA516E0035BF6C /* LifeRecordApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4044F72CDA516F0035BF6C /* Build configuration list for PBXNativeTarget "LifeRecordApp" */;
+			buildPhases = (
+				FF4044CF2CDA516E0035BF6C /* Sources */,
+				FF4044D02CDA516E0035BF6C /* Frameworks */,
+				FF4044D12CDA516E0035BF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeRecordApp;
+			productName = LifeRecordApp;
+			productReference = FF4044D32CDA516E0035BF6C /* LifeRecordApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4044E22CDA516F0035BF6C /* LifeRecordAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4044FA2CDA516F0035BF6C /* Build configuration list for PBXNativeTarget "LifeRecordAppTests" */;
+			buildPhases = (
+				FF4044DF2CDA516F0035BF6C /* Sources */,
+				FF4044E02CDA516F0035BF6C /* Frameworks */,
+				FF4044E12CDA516F0035BF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4044E52CDA516F0035BF6C /* PBXTargetDependency */,
+			);
+			name = LifeRecordAppTests;
+			productName = LifeRecordAppTests;
+			productReference = FF4044E32CDA516F0035BF6C /* LifeRecordAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF4044EC2CDA516F0035BF6C /* LifeRecordAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4044FD2CDA516F0035BF6C /* Build configuration list for PBXNativeTarget "LifeRecordAppUITests" */;
+			buildPhases = (
+				FF4044E92CDA516F0035BF6C /* Sources */,
+				FF4044EA2CDA516F0035BF6C /* Frameworks */,
+				FF4044EB2CDA516F0035BF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4044EF2CDA516F0035BF6C /* PBXTargetDependency */,
+			);
+			name = LifeRecordAppUITests;
+			productName = LifeRecordAppUITests;
+			productReference = FF4044ED2CDA516F0035BF6C /* LifeRecordAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4044CB2CDA516E0035BF6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FF4044D22CDA516E0035BF6C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FF4044E22CDA516F0035BF6C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FF4044D22CDA516E0035BF6C;
+					};
+					FF4044EC2CDA516F0035BF6C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FF4044D22CDA516E0035BF6C;
+					};
+				};
+			};
+			buildConfigurationList = FF4044CE2CDA516E0035BF6C /* Build configuration list for PBXProject "LifeRecordApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4044CA2CDA516E0035BF6C;
+			productRefGroup = FF4044D42CDA516E0035BF6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4044D22CDA516E0035BF6C /* LifeRecordApp */,
+				FF4044E22CDA516F0035BF6C /* LifeRecordAppTests */,
+				FF4044EC2CDA516F0035BF6C /* LifeRecordAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4044D12CDA516E0035BF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4044DB2CDA516F0035BF6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4044E12CDA516F0035BF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4044EB2CDA516F0035BF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4044CF2CDA516E0035BF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4045092CDA547A0035BF6C /* RecordDetailView.swift in Sources */,
+				FF4045052CDA522E0035BF6C /* AddRecordView.swift in Sources */,
+				FF4044D92CDA516E0035BF6C /* ContentView.swift in Sources */,
+				FF4045032CDA51F50035BF6C /* DataManager.swift in Sources */,
+				FF40450B2CDA55E60035BF6C /* StatsView.swift in Sources */,
+				FF4045072CDA524E0035BF6C /* ImagePicker.swift in Sources */,
+				FF4044D72CDA516E0035BF6C /* LifeRecordAppApp.swift in Sources */,
+				FF4045012CDA51CE0035BF6C /* Record.swift in Sources */,
+				FF40450D2CDA560C0035BF6C /* Quotes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4044DF2CDA516F0035BF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4044E82CDA516F0035BF6C /* LifeRecordAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4044E92CDA516F0035BF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4044F22CDA516F0035BF6C /* LifeRecordAppUITests.swift in Sources */,
+				FF4044F42CDA516F0035BF6C /* LifeRecordAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4044E52CDA516F0035BF6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4044D22CDA516E0035BF6C /* LifeRecordApp */;
+			targetProxy = FF4044E42CDA516F0035BF6C /* PBXContainerItemProxy */;
+		};
+		FF4044EF2CDA516F0035BF6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4044D22CDA516E0035BF6C /* LifeRecordApp */;
+			targetProxy = FF4044EE2CDA516F0035BF6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF4044F52CDA516F0035BF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF4044F62CDA516F0035BF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4044F82CDA516F0035BF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 33T38YP3TY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alpha.LifeRecordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF4044F92CDA516F0035BF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 33T38YP3TY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alpha.LifeRecordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF4044FB2CDA516F0035BF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33T38YP3TY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alpha.LifeRecordAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeRecordApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeRecordApp";
+			};
+			name = Debug;
+		};
+		FF4044FC2CDA516F0035BF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33T38YP3TY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alpha.LifeRecordAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeRecordApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeRecordApp";
+			};
+			name = Release;
+		};
+		FF4044FE2CDA516F0035BF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33T38YP3TY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alpha.LifeRecordAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeRecordApp;
+			};
+			name = Debug;
+		};
+		FF4044FF2CDA516F0035BF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33T38YP3TY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Alpha.LifeRecordAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeRecordApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4044CE2CDA516E0035BF6C /* Build configuration list for PBXProject "LifeRecordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4044F52CDA516F0035BF6C /* Debug */,
+				FF4044F62CDA516F0035BF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4044F72CDA516F0035BF6C /* Build configuration list for PBXNativeTarget "LifeRecordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4044F82CDA516F0035BF6C /* Debug */,
+				FF4044F92CDA516F0035BF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4044FA2CDA516F0035BF6C /* Build configuration list for PBXNativeTarget "LifeRecordAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4044FB2CDA516F0035BF6C /* Debug */,
+				FF4044FC2CDA516F0035BF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4044FD2CDA516F0035BF6C /* Build configuration list for PBXNativeTarget "LifeRecordAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4044FE2CDA516F0035BF6C /* Debug */,
+				FF4044FF2CDA516F0035BF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF4044CB2CDA516E0035BF6C /* Project object */;
+}
