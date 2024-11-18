@@ -100,8 +100,8 @@
 		FF76681D2CDB9B5D00A335ED /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
-				FF76684B2CDB9BAA00A335ED /* MoodData.swift */,
 				FF76684D2CDB9BDA00A335ED /* Mood.swift */,
+				FF76684B2CDB9BAA00A335ED /* MoodData.swift */,
 				FF7668492CDB9B8E00A335ED /* MoodDetailView.swift */,
 				FF76681E2CDB9B5D00A335ED /* MoodTrackerApp.swift */,
 				FF7668202CDB9B5D00A335ED /* ContentView.swift */,

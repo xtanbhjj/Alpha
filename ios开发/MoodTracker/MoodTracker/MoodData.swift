@@ -7,23 +7,22 @@ class MoodData: ObservableObject {
         }
     }
     
-    // 使用懒加载来避免在初始化时调用 self
+    
     init() {
         self.moods = [] // 初始化时为空数组
         loadMoods() // 在初始化后调用方法
     }
     
-    // 添加新的心情记录
+
     func addMood(mood: Mood) {
         moods.append(mood)
     }
     
-    // 获取所有心情记录
+    
     func getMoods() -> [Mood] {
         return moods
     }
     
-    // 点赞功能
     func likeMood(mood: Mood) {
         if let index = moods.firstIndex(where: { $0.id == mood.id }) {
             moods[index].likes += 1

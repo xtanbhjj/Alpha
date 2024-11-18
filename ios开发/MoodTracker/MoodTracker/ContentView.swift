@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var moodData = MoodData()
-    @State private var selectedMood: MoodType? = nil // 当前选中的心情类型，默认是 nil，表示显示所有
+    @State private var selectedMood: MoodType? = nil
     
     var body: some View {
         NavigationView {
@@ -56,11 +56,16 @@ struct ContentView: View {
                         }
                     }
                 }
+                
+                // 添加 "Add Mood" 按钮
                 .navigationBarTitle("Mood Tracker")
                 .navigationBarItems(trailing: NavigationLink(destination: MoodDetailView(moodData: moodData)) {
                     Text("Add Mood")
                 })
+                
+                Spacer() // 确保 List 占据剩余空间
             }
+            .padding(.top)
         }
     }
     
@@ -73,3 +78,4 @@ struct ContentView: View {
         }
     }
 }
+

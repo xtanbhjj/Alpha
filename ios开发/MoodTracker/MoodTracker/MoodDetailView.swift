@@ -25,8 +25,7 @@ struct MoodDetailView: View {
             
             Section(header: Text("Tags (Optional)")) {
                 TextField("Enter tags (comma separated)", text: $tags)
-                    .keyboardType(.asciiCapable) // 只允许输入英文和符号
-            }
+                    .keyboardType(.asciiCapable) 
             
             Button("Save") {
                 // 如果标签不为空，将标签分割成数组
