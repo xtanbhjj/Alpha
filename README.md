@@ -7,7 +7,9 @@ Alpha is a project aimed at share my works in jlu
 
 ### PyGame 🎮
 
-### TodoList App 📅
+### Ios App 📅
+
+### Andoroid App（物品管理系统）
 
 ### 敬请期待
 
